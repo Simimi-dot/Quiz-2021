@@ -15,6 +15,10 @@
 		0629ED5A270EFA6400D90092 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0629ED58270EFA6400D90092 /* LaunchScreen.storyboard */; };
 		0629ED62270F020700D90092 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0629ED61270F020700D90092 /* QuestionViewController.swift */; };
 		0629ED65270F181600D90092 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0629ED64270F181500D90092 /* ResultsViewController.swift */; };
+		0629ED6A270F219E00D90092 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0629ED69270F219E00D90092 /* Question.swift */; };
+		0629ED6C270F223000D90092 /* ResponseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0629ED6B270F223000D90092 /* ResponseType.swift */; };
+		0629ED6E270F247600D90092 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0629ED6D270F247600D90092 /* Answer.swift */; };
+		0629ED70270F250600D90092 /* AnimalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0629ED6F270F250600D90092 /* AnimalType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		0629ED5B270EFA6400D90092 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0629ED61270F020700D90092 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		0629ED64270F181500D90092 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		0629ED69270F219E00D90092 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		0629ED6B270F223000D90092 /* ResponseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseType.swift; sourceTree = "<group>"; };
+		0629ED6D270F247600D90092 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
+		0629ED6F270F250600D90092 /* AnimalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,12 +68,9 @@
 		0629ED4C270EFA6200D90092 /* Quiz 2021 */ = {
 			isa = PBXGroup;
 			children = (
-				0629ED4D270EFA6200D90092 /* AppDelegate.swift */,
-				0629ED56270EFA6400D90092 /* Assets.xcassets */,
-				0629ED5B270EFA6400D90092 /* Info.plist */,
-				0629ED58270EFA6400D90092 /* LaunchScreen.storyboard */,
-				0629ED53270EFA6200D90092 /* Main.storyboard */,
-				0629ED4F270EFA6200D90092 /* SceneDelegate.swift */,
+				0629ED68270F1FF000D90092 /* App */,
+				0629ED66270F1BF700D90092 /* Models */,
+				0629ED67270F1FC600D90092 /* View */,
 				0629ED63270F022800D90092 /* View Controllers */,
 			);
 			path = "Quiz 2021";
@@ -79,6 +84,37 @@
 				0629ED64270F181500D90092 /* ResultsViewController.swift */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		0629ED66270F1BF700D90092 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0629ED69270F219E00D90092 /* Question.swift */,
+				0629ED6B270F223000D90092 /* ResponseType.swift */,
+				0629ED6D270F247600D90092 /* Answer.swift */,
+				0629ED6F270F250600D90092 /* AnimalType.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0629ED67270F1FC600D90092 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0629ED58270EFA6400D90092 /* LaunchScreen.storyboard */,
+				0629ED53270EFA6200D90092 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0629ED68270F1FF000D90092 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				0629ED4F270EFA6200D90092 /* SceneDelegate.swift */,
+				0629ED4D270EFA6200D90092 /* AppDelegate.swift */,
+				0629ED56270EFA6400D90092 /* Assets.xcassets */,
+				0629ED5B270EFA6400D90092 /* Info.plist */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,8 +191,12 @@
 				0629ED52270EFA6200D90092 /* WelcomeViewController.swift in Sources */,
 				0629ED4E270EFA6200D90092 /* AppDelegate.swift in Sources */,
 				0629ED62270F020700D90092 /* QuestionViewController.swift in Sources */,
+				0629ED6A270F219E00D90092 /* Question.swift in Sources */,
 				0629ED65270F181600D90092 /* ResultsViewController.swift in Sources */,
 				0629ED50270EFA6200D90092 /* SceneDelegate.swift in Sources */,
+				0629ED6C270F223000D90092 /* ResponseType.swift in Sources */,
+				0629ED6E270F247600D90092 /* Answer.swift in Sources */,
+				0629ED70270F250600D90092 /* AnimalType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,7 +347,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R8Z5KNL8KD;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Quiz 2021/Info.plist";
+				INFOPLIST_FILE = "Quiz 2021/App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -335,7 +375,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R8Z5KNL8KD;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Quiz 2021/Info.plist";
+				INFOPLIST_FILE = "Quiz 2021/App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
