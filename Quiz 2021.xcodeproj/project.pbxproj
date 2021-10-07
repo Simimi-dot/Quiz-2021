@@ -13,6 +13,7 @@
 		0629ED55270EFA6200D90092 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0629ED53270EFA6200D90092 /* Main.storyboard */; };
 		0629ED57270EFA6400D90092 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0629ED56270EFA6400D90092 /* Assets.xcassets */; };
 		0629ED5A270EFA6400D90092 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0629ED58270EFA6400D90092 /* LaunchScreen.storyboard */; };
+		0629ED62270F020700D90092 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0629ED61270F020700D90092 /* QuestionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		0629ED56270EFA6400D90092 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0629ED59270EFA6400D90092 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0629ED5B270EFA6400D90092 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0629ED61270F020700D90092 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +59,23 @@
 			isa = PBXGroup;
 			children = (
 				0629ED4D270EFA6200D90092 /* AppDelegate.swift */,
-				0629ED4F270EFA6200D90092 /* SceneDelegate.swift */,
-				0629ED51270EFA6200D90092 /* WelcomeViewController.swift */,
-				0629ED53270EFA6200D90092 /* Main.storyboard */,
 				0629ED56270EFA6400D90092 /* Assets.xcassets */,
-				0629ED58270EFA6400D90092 /* LaunchScreen.storyboard */,
 				0629ED5B270EFA6400D90092 /* Info.plist */,
+				0629ED58270EFA6400D90092 /* LaunchScreen.storyboard */,
+				0629ED53270EFA6200D90092 /* Main.storyboard */,
+				0629ED4F270EFA6200D90092 /* SceneDelegate.swift */,
+				0629ED63270F022800D90092 /* View Controllers */,
 			);
 			path = "Quiz 2021";
+			sourceTree = "<group>";
+		};
+		0629ED63270F022800D90092 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0629ED51270EFA6200D90092 /* WelcomeViewController.swift */,
+				0629ED61270F020700D90092 /* QuestionViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +151,7 @@
 			files = (
 				0629ED52270EFA6200D90092 /* WelcomeViewController.swift in Sources */,
 				0629ED4E270EFA6200D90092 /* AppDelegate.swift in Sources */,
+				0629ED62270F020700D90092 /* QuestionViewController.swift in Sources */,
 				0629ED50270EFA6200D90092 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
