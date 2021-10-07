@@ -14,6 +14,7 @@
 		0629ED57270EFA6400D90092 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0629ED56270EFA6400D90092 /* Assets.xcassets */; };
 		0629ED5A270EFA6400D90092 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0629ED58270EFA6400D90092 /* LaunchScreen.storyboard */; };
 		0629ED62270F020700D90092 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0629ED61270F020700D90092 /* QuestionViewController.swift */; };
+		0629ED65270F181600D90092 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0629ED64270F181500D90092 /* ResultsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		0629ED59270EFA6400D90092 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0629ED5B270EFA6400D90092 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0629ED61270F020700D90092 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		0629ED64270F181500D90092 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			children = (
 				0629ED51270EFA6200D90092 /* WelcomeViewController.swift */,
 				0629ED61270F020700D90092 /* QuestionViewController.swift */,
+				0629ED64270F181500D90092 /* ResultsViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -152,6 +155,7 @@
 				0629ED52270EFA6200D90092 /* WelcomeViewController.swift in Sources */,
 				0629ED4E270EFA6200D90092 /* AppDelegate.swift in Sources */,
 				0629ED62270F020700D90092 /* QuestionViewController.swift in Sources */,
+				0629ED65270F181600D90092 /* ResultsViewController.swift in Sources */,
 				0629ED50270EFA6200D90092 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
