@@ -136,6 +136,9 @@
                                         <rect key="frame" x="0.0" y="118" width="350" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Ответить"/>
+                                        <connections>
+                                            <action selector="rangedButtonPressed" destination="tls-jo-yd6" eventType="touchUpInside" id="v1W-sZ-iXb"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -202,31 +205,46 @@
                                         <rect key="frame" x="0.0" y="204" width="350" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Ответить"/>
+                                        <connections>
+                                            <action selector="multiButtonPressed" destination="tls-jo-yd6" eventType="touchUpInside" id="uN7-20-738"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="PMz-02-7lb">
-                                <rect key="frame" x="161.66666666666666" y="353" width="67" height="148"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="PMz-02-7lb">
+                                <rect key="frame" x="183" y="387" width="24" height="80"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4nK-g5-5Em">
-                                        <rect key="frame" x="0.0" y="0.0" width="67" height="31"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="24" height="14"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled"/>
+                                        <connections>
+                                            <action selector="singleButtonPressed:" destination="tls-jo-yd6" eventType="touchUpInside" id="ekq-L3-28j"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r31-gi-R7u">
-                                        <rect key="frame" x="0.0" y="39" width="67" height="31"/>
+                                        <rect key="frame" x="0.0" y="22" width="24" height="14"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled"/>
+                                        <connections>
+                                            <action selector="singleButtonPressed:" destination="tls-jo-yd6" eventType="touchUpInside" id="ct5-eV-nne"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rTh-e9-rNW">
-                                        <rect key="frame" x="0.0" y="78" width="67" height="31"/>
+                                        <rect key="frame" x="0.0" y="44" width="24" height="14"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled"/>
+                                        <connections>
+                                            <action selector="singleButtonPressed:" destination="tls-jo-yd6" eventType="touchUpInside" id="iUf-2Y-aMV"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tus-CA-VSc">
-                                        <rect key="frame" x="0.0" y="117" width="67" height="31"/>
+                                        <rect key="frame" x="0.0" y="66" width="24" height="14"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled"/>
+                                        <connections>
+                                            <action selector="singleButtonPressed:" destination="tls-jo-yd6" eventType="touchUpInside" id="ZWE-Ga-r4o"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -249,23 +267,30 @@
                             <constraint firstItem="yF6-2P-uC2" firstAttribute="trailing" secondItem="pyC-pV-YBY" secondAttribute="trailing" constant="20" id="ueD-Y7-cVr"/>
                             <constraint firstItem="Weh-4g-NcO" firstAttribute="leading" secondItem="yF6-2P-uC2" secondAttribute="leading" constant="20" id="yM7-9i-ngv"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="3Xs-FV-BDp"/>
-                                <exclude reference="Weh-4g-NcO"/>
-                                <exclude reference="PMz-02-7lb"/>
-                            </mask>
-                        </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="yiC-ja-7Bb">
-                        <barButtonItem key="rightBarButtonItem" title="DELETE ME" id="2Ef-6k-6nh">
-                            <connections>
-                                <segue destination="cNa-7m-1TJ" kind="show" id="X0R-SD-EXq"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="yiC-ja-7Bb"/>
                     <connections>
-                        <segue destination="cNa-7m-1TJ" kind="show" id="5fn-fu-cF4"/>
+                        <outlet property="multipleStackView" destination="Weh-4g-NcO" id="umo-kt-xfH"/>
+                        <outlet property="questionLabel" destination="IX9-3G-l6a" id="Ygg-3n-5IP"/>
+                        <outlet property="questionProgressView" destination="pyC-pV-YBY" id="hpD-MP-P3L"/>
+                        <outlet property="rangedSlider" destination="G3K-Jb-b1D" id="Nfw-hP-zij"/>
+                        <outlet property="rangedStackView" destination="3Xs-FV-BDp" id="6SZ-H0-QYO"/>
+                        <outlet property="singleStackView" destination="PMz-02-7lb" id="4Af-O3-uKP"/>
+                        <outletCollection property="singleButtons" destination="4nK-g5-5Em" collectionClass="NSMutableArray" id="KgJ-eO-61R"/>
+                        <outletCollection property="singleButtons" destination="r31-gi-R7u" collectionClass="NSMutableArray" id="SCd-t7-yLu"/>
+                        <outletCollection property="singleButtons" destination="rTh-e9-rNW" collectionClass="NSMutableArray" id="EBQ-WN-Ljc"/>
+                        <outletCollection property="singleButtons" destination="tus-CA-VSc" collectionClass="NSMutableArray" id="p5D-WE-Ug9"/>
+                        <outletCollection property="multiLabels" destination="CO1-Y0-Bo0" collectionClass="NSMutableArray" id="y53-hD-wXW"/>
+                        <outletCollection property="multiLabels" destination="UTP-Vy-AfQ" collectionClass="NSMutableArray" id="k2M-78-kRM"/>
+                        <outletCollection property="multiLabels" destination="cTL-8F-26T" collectionClass="NSMutableArray" id="dZZ-MY-4jR"/>
+                        <outletCollection property="multiLabels" destination="baH-5l-9bn" collectionClass="NSMutableArray" id="gTF-QP-XhY"/>
+                        <outletCollection property="rangedLabels" destination="QAP-fA-N4X" collectionClass="NSMutableArray" id="fwM-ob-kaU"/>
+                        <outletCollection property="rangedLabels" destination="faW-yN-9AQ" collectionClass="NSMutableArray" id="Pct-uW-HUq"/>
+                        <outletCollection property="multiSwitches" destination="P08-Py-ZgT" collectionClass="NSMutableArray" id="VJg-iL-loS"/>
+                        <outletCollection property="multiSwitches" destination="Y7e-Ua-7nk" collectionClass="NSMutableArray" id="E5e-91-COb"/>
+                        <outletCollection property="multiSwitches" destination="TS8-KM-s51" collectionClass="NSMutableArray" id="fdM-Jq-3js"/>
+                        <outletCollection property="multiSwitches" destination="uGi-D1-lx2" collectionClass="NSMutableArray" id="t9h-UR-cTg"/>
+                        <segue destination="cNa-7m-1TJ" kind="show" identifier="Results Segue" destinationCreationSelector="resultsSegue:" id="5fn-fu-cF4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V0G-MQ-wG4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -283,13 +308,13 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="j79-qN-LBN">
                                 <rect key="frame" x="20" y="313" width="350" height="164"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ThM-3U-yif">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ThM-3U-yif">
                                         <rect key="frame" x="116.66666666666666" y="0.0" width="116.66666666666666" height="60"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ti1-79-7za">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ti1-79-7za">
                                         <rect key="frame" x="151" y="140" width="48" height="24"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <nil key="textColor"/>
@@ -313,6 +338,10 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="animalLabel" destination="ThM-3U-yif" id="dFP-Ki-zUH"/>
+                        <outlet property="descriptionLabel" destination="ti1-79-7za" id="HUe-kb-u4V"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pj1-s4-FWi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="rqV-Mh-IQP" userLabel="Exit" sceneMemberID="exit"/>
@@ -339,9 +368,6 @@
             <point key="canvasLocation" x="240" y="99"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="X0R-SD-EXq"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
